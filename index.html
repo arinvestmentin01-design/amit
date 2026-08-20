@@ -8,9 +8,13 @@
 <style>
 :root{--navy:#071a33;--blue:#123d6b;--gold:#f5c542;--bg:#f5f7fa;--muted:#64748b;--line:#e2e8f0}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.6}a{text-decoration:none;color:inherit}
-header{position:sticky;top:0;z-index:10;background:#071a33ee;color:#fff}.nav{max-width:1180px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}.brand-logo{width:58px;height:58px;object-fit:cover;border-radius:50%;display:block;background:#fff;box-shadow:0 3px 14px rgba(245,197,66,.28)}
-.logo{display:flex;align-items:center}
-nav{display:flex;gap:20px;font-size:14px}nav a:hover{color:var(--gold)}
+header{position:sticky;top:0;z-index:10;background:rgba(7,26,51,.97);color:#fff;border-bottom:1px solid rgba(245,197,66,.28);box-shadow:0 5px 22px rgba(0,0,0,.22)}
+.nav{max-width:1180px;margin:auto;min-height:76px;padding:10px 20px;display:flex;align-items:center;justify-content:flex-end;position:relative}
+.logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;white-space:nowrap}
+.logo-text{font-size:25px;font-weight:900;letter-spacing:2.5px;color:var(--gold);text-shadow:0 0 12px rgba(245,197,66,.20)}
+.logo-text span{color:#fff}
+.logo::after{content:"";position:absolute;left:8%;right:8%;bottom:-8px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.9}
+nav{display:flex;gap:18px;font-size:13px;align-items:center}nav a{color:#fff;font-weight:600}nav a:hover{color:var(--gold)}
 .hero{background:linear-gradient(135deg,#071a33,#123d6b);color:#fff;padding:90px 20px}.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}.badge{color:var(--gold);border:1px solid #fff4;padding:7px 12px;border-radius:30px;display:inline-block;font-size:12px}.hero h1{font-size:58px;line-height:1.1;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;color:#dbe6f2;max-width:650px;margin-bottom:25px}.btn{display:inline-block;background:var(--gold);color:var(--navy);padding:13px 22px;border-radius:30px;font-weight:800;border:0;cursor:pointer;margin:4px}.btn.alt{background:transparent;color:#fff;border:1px solid #fff}
 .hero-card,.card,.form,.result{background:#fff;border-radius:18px;padding:26px;box-shadow:0 8px 25px #071a3310}.hero-card{background:#ffffff12;border:1px solid #fff3;color:#fff}.metric{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #fff2}.metric:last-child{border:0}
 section{padding:75px 20px}.container{max-width:1180px;margin:auto}.title{text-align:center;margin-bottom:40px}.title h2{font-size:38px;color:var(--navy)}.title p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card h3{color:var(--navy);margin:8px 0}.card p{color:var(--muted)}.icon{font-size:36px}
@@ -23,12 +27,12 @@ label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}input,texta
 .contact-info{background:linear-gradient(135deg,#071a33,#123d6b);color:#fff;border-radius:22px;padding:32px}.contact-info h3{color:var(--gold);font-size:27px}.contact-info p{color:#dbe6f2;margin:10px 0}
 footer{background:#061426;color:#94a3b8;text-align:center;padding:35px 20px}.footer-brand{color:var(--gold);font-size:25px;font-weight:900}.disclaimer{max-width:850px;margin:12px auto;font-size:12px}
 .whatsapp{position:fixed;right:22px;bottom:22px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:27px;z-index:20}
-@media(max-width:850px){.brand-logo{width:52px;height:52px}nav{display:none}.hero-inner,.about-grid,.calc-grid,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:44px}}
-@media(max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:38px}}
+@media(max-width:850px){nav{display:none}.logo-text{font-size:23px;letter-spacing:2px}.hero-inner,.about-grid,.calc-grid,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:44px}}
+@media(max-width:560px){.logo-text{font-size:21px;letter-spacing:1.7px}.grid{grid-template-columns:1fr}.hero h1{font-size:38px}}
 </style>
 </head>
 <body>
-<header><div class="nav"><a class="logo" href="#home"><img src="ar-investment-logo.jpg" alt="AR INVESTMENT Logo" class="brand-logo"></a><nav>
+<header><div class="nav"><a class="logo" href="#home"><span class="logo-text">AR <span>INVESTMENT</span></span></a><nav>
 <a href="#home">Home</a><a href="#about">About</a><a href="#mutual-funds">Mutual Funds</a><a href="#calculator">SIP Calculator</a><a href="#comparison">Comparison</a><a href="#goals">Goals</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
 </nav></div></header>
 
