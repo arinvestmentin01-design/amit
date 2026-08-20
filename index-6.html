@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AR INVESTMENT - Mutual Funds, SIP and investment education">
+<title>AR INVESTMENT | Mutual Funds • SIP • Wealth Planning</title>
+<style>
+:root{--navy:#071a33;--blue:#123d6b;--gold:#f5c542;--bg:#f5f7fa;--muted:#64748b;--line:#e2e8f0}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.6}a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:rgba(7,26,51,.97);color:#fff;border-bottom:1px solid rgba(245,197,66,.28);box-shadow:0 5px 22px rgba(0,0,0,.22)}
+.nav{max-width:1180px;margin:auto;min-height:76px;padding:10px 20px;display:flex;align-items:center;justify-content:flex-end;position:relative}
+.logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;white-space:nowrap}
+.logo-text{font-size:25px;font-weight:900;letter-spacing:2.5px;color:var(--gold);text-shadow:0 0 12px rgba(245,197,66,.20)}
+.logo-text span{color:#fff}
+.logo::after{content:"";position:absolute;left:8%;right:8%;bottom:-8px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.9}
+nav{display:flex;gap:18px;font-size:13px;align-items:center}nav a{color:#fff;font-weight:600}nav a:hover{color:var(--gold)}
+.hero{background:linear-gradient(135deg,#071a33,#123d6b);color:#fff;padding:90px 20px}.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}.badge{color:var(--gold);border:1px solid #fff4;padding:7px 12px;border-radius:30px;display:inline-block;font-size:12px}.hero h1{font-size:58px;line-height:1.1;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;color:#dbe6f2;max-width:650px;margin-bottom:25px}.btn{display:inline-block;background:var(--gold);color:var(--navy);padding:13px 22px;border-radius:30px;font-weight:800;border:0;cursor:pointer;margin:4px}.btn.alt{background:transparent;color:#fff;border:1px solid #fff}
+.hero-card,.card,.form,.result{background:#fff;border-radius:18px;padding:26px;box-shadow:0 8px 25px #071a3310}.hero-card{background:#ffffff12;border:1px solid #fff3;color:#fff}.metric{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #fff2}.metric:last-child{border:0}
+section{padding:75px 20px}.container{max-width:1180px;margin:auto}.title{text-align:center;margin-bottom:40px}.title h2{font-size:38px;color:var(--navy)}.title p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card h3{color:var(--navy);margin:8px 0}.card p{color:var(--muted)}.icon{font-size:36px}
+.about{background:#fff}.about-grid,.calc-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.checks{display:grid;gap:10px;margin-top:20px}.checks div{background:#f8fafc;padding:11px;border-radius:9px}.about-box{background:linear-gradient(135deg,#071a33,#123d6b);color:#fff;border-radius:22px;padding:32px}.about-box strong{color:var(--gold)}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}input,textarea{width:100%;padding:13px;border:1px solid var(--line);border-radius:9px;margin-bottom:16px;font-size:15px}.form .btn{width:100%;margin:0}
+.result{background:#eef5ff}.big{font-size:30px;font-weight:900;color:var(--navy);margin:5px 0 15px}.row{display:flex;justify-content:space-between;border-bottom:1px solid #dbe6f2;padding:9px 0}.row:last-child{border:0}.note{font-size:12px;color:var(--muted);margin-top:10px}
+.table{overflow:auto;border-radius:16px;background:#fff}.table table{width:100%;border-collapse:collapse;min-width:700px}.table th,.table td{text-align:left;padding:15px;border-bottom:1px solid var(--line)}.table th{background:#071a33;color:#fff}.high{color:#dc2626;font-weight:700}.mod{color:#d97706;font-weight:700}
+.goals{background:#071a33}.goals .title h2{color:#fff}.goals .title p{color:#cbd5e1}.goals .card{background:#fff}
+.blog-top{height:135px;background:linear-gradient(135deg,#123d6b,#071a33);display:flex;align-items:center;justify-content:center;font-size:48px}.blog-body{padding-top:18px}.tag{font-size:11px;color:#123d6b;font-weight:800}.blog h3{margin:5px 0}
+.contact-info{background:linear-gradient(135deg,#071a33,#123d6b);color:#fff;border-radius:22px;padding:32px}.contact-info h3{color:var(--gold);font-size:27px}.contact-info p{color:#dbe6f2;margin:10px 0}
+footer{background:#061426;color:#94a3b8;text-align:center;padding:35px 20px}.footer-brand{color:var(--gold);font-size:25px;font-weight:900}.disclaimer{max-width:850px;margin:12px auto;font-size:12px}
+.whatsapp{position:fixed;right:22px;bottom:22px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:27px;z-index:20}
+@media(max-width:850px){nav{display:none}.logo-text{font-size:23px;letter-spacing:2px}.hero-inner,.about-grid,.calc-grid,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:44px}}
+@media(max-width:560px){.logo-text{font-size:21px;letter-spacing:1.7px}.grid{grid-template-columns:1fr}.hero h1{font-size:38px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="#home"><span class="logo-text">AR <span>INVESTMENT</span></span></a><nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#mutual-funds">Mutual Funds</a><a href="#calculator">SIP Calculator</a><a href="#comparison">Comparison</a><a href="#goals">Goals</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="hero-inner"><div>
+<div class="badge">SIP • MUTUAL FUNDS • FINANCIAL EDUCATION</div>
+<h1>Invest with a plan.<br><span>Grow with patience.</span></h1>
+<p>AR INVESTMENT is a professional platform to understand mutual funds, SIPs, goal-based investing and long-term wealth creation.</p>
+<a class="btn" href="#calculator">Calculate Your SIP</a><a class="btn alt" href="#mutual-funds">Explore Mutual Funds</a>
+</div><div class="hero-card"><h3>Build wealth with discipline</h3><div class="metric"><span>Start with</span><b>Regular SIP</b></div><div class="metric"><span>Focus on</span><b>Long Term</b></div><div class="metric"><span>Invest for</span><b>Your Goals</b></div><div class="metric"><span>Remember</span><b>Risk & Return</b></div></div></div></section>
+
+<section class="about" id="about"><div class="container"><div class="title"><h2>About AR INVESTMENT</h2><p>Helping investors understand investing before making decisions.</p></div><div class="about-grid"><div><h2>Simple investing. Better understanding.</h2><p style="color:#64748b;margin-top:12px">AR INVESTMENT focuses on investor education and mutual fund distribution. Our aim is to make SIP, compounding, risk, diversification and goal-based investing easier to understand.</p><div class="checks"><div>✓ Understand your financial goals</div><div>✓ Learn how mutual funds work</div><div>✓ Compare important scheme factors</div><div>✓ Invest with a long-term mindset</div></div></div><div class="about-box"><h3>Our approach</h3><p style="margin-top:12px">Successful investing is not about chasing every market movement. It is about <strong>discipline, diversification, time and informed decisions.</strong></p><p style="margin-top:15px">Use the tools on this website to learn and create a framework for your investment journey.</p></div></div></div></section>
+
+<section id="mutual-funds"><div class="container"><div class="title"><h2>Mutual Fund Categories</h2><p>Know the basics before selecting a scheme.</p></div><div class="grid">
+<div class="card"><div class="icon">📈</div><h3>Large Cap</h3><p>Primarily invests in established large companies and offers large-company equity exposure.</p></div>
+<div class="card"><div class="icon">🚀</div><h3>Mid Cap</h3><p>Primarily invests in mid-sized companies and can have higher volatility than large-cap funds.</p></div>
+<div class="card"><div class="icon">🌱</div><h3>Small Cap</h3><p>Primarily invests in smaller companies; higher growth potential can come with higher risk.</p></div>
+<div class="card"><div class="icon">⚖️</div><h3>Flexi Cap</h3><p>Can invest across market capitalisations according to the scheme's strategy.</p></div>
+<div class="card"><div class="icon">🏦</div><h3>Debt Funds</h3><p>Invest mainly in fixed-income securities; risks depend on the portfolio and market conditions.</p></div>
+<div class="card"><div class="icon">🔄</div><h3>Hybrid Funds</h3><p>Combine equity and debt exposure according to the scheme's investment strategy.</p></div>
+</div></div></section>
+
+<section id="calculator"><div class="container"><div class="title"><h2>SIP Calculator</h2><p>Illustrate how a regular monthly investment may grow over time.</p></div><div class="calc-grid"><div class="form"><label>Monthly SIP (₹)</label><input id="monthly" type="number" value="5000" min="1"><label>Expected Annual Return (%)</label><input id="rate" type="number" value="12" min="0" step=".1"><label>Investment Period (Years)</label><input id="years" type="number" value="10" min="1"><button class="btn" onclick="calculateSIP()">Calculate</button><p class="note">Illustration only. Mutual fund returns are market-linked and not guaranteed.</p></div><div class="result"><div>Estimated Future Value<div class="big" id="future">₹0</div></div><div class="row"><span>Total Investment</span><b id="invested">₹0</b></div><div class="row"><span>Illustrative Gain</span><b id="gain">₹0</b></div></div></div></div></section>
+
+<section id="comparison"><div class="container"><div class="title"><h2>Fund Comparison Framework</h2><p>Compare factors that matter — not just past returns.</p></div><div class="table"><table><tr><th>Category</th><th>Typical Risk</th><th>Primary Focus</th><th>Illustrative Horizon*</th><th>Check</th></tr>
+<tr><td>Large Cap</td><td class="mod">Moderate–High</td><td>Large companies</td><td>5+ years</td><td>Valuation, consistency</td></tr><tr><td>Mid Cap</td><td class="high">High</td><td>Mid-sized companies</td><td>5–7+ years</td><td>Drawdowns, portfolio</td></tr><tr><td>Small Cap</td><td class="high">Very High</td><td>Smaller companies</td><td>7–10+ years</td><td>Volatility, liquidity</td></tr><tr><td>Flexi Cap</td><td class="mod">Moderate–High</td><td>Across market caps</td><td>5+ years</td><td>Allocation, strategy</td></tr><tr><td>Debt</td><td>Varies</td><td>Fixed income</td><td>Depends</td><td>Credit & rate risk</td></tr>
+</table></div><p class="note">*Educational illustrations, not recommendations. Suitability depends on the investor, scheme and financial goal.</p></div></section>
+
+<section class="goals" id="goals"><div class="container"><div class="title"><h2>Investment Goals</h2><p>Invest according to what your money needs to accomplish.</p></div><div class="grid">
+<div class="card"><div class="icon">🎓</div><h3>Child Education</h3><p>Plan early, estimate the future requirement and review periodically.</p></div><div class="card"><div class="icon">🏠</div><h3>Home Purchase</h3><p>Define your target amount, time horizon and acceptable market risk.</p></div><div class="card"><div class="icon">🏖️</div><h3>Retirement</h3><p>Use a long-term framework that considers inflation, time and future expenses.</p></div><div class="card"><div class="icon">🛡️</div><h3>Emergency Fund</h3><p>Keep emergency money accessible and separate from long-term market investments.</p></div>
+</div></div></section>
+
+<section id="blog"><div class="container"><div class="title"><h2>Investment Blog</h2><p>Short lessons to strengthen your financial knowledge.</p></div><div class="grid">
+<article class="card"><div class="blog-top">⏳</div><div class="blog-body"><div class="tag">SIP</div><h3>Power of Compounding</h3><p>Why time can be an important factor in long-term investing.</p></div></article>
+<article class="card"><div class="blog-top">📊</div><div class="blog-body"><div class="tag">MUTUAL FUNDS</div><h3>What is NAV?</h3><p>Understand NAV and why it should not be confused with a fund's quality.</p></div></article>
+<article class="card"><div class="blog-top">🎯</div><div class="blog-body"><div class="tag">PLANNING</div><h3>Goal-Based Investing</h3><p>Connect your investments with a goal, amount and time horizon.</p></div></article>
+</div></div></section>
+
+<section id="contact" class="about"><div class="container"><div class="title"><h2>Let's Connect</h2><p>Have a question about SIP or mutual funds? Get in touch.</p></div><div class="contact-grid">
+<div class="contact-info"><h3>AR INVESTMENT</h3><p>📈 Mutual Fund Distribution</p><p>💰 SIP Planning</p><p>📚 Investor Education</p><p>🎯 Goal-Based Investment Guidance</p><p><b>WhatsApp / Phone</b><br>+91 8200570102</p><p><b>Instagram</b><br><a href="https://www.instagram.com/arinvestment.in/" target="_blank" rel="noopener" style="color:#f5c542;font-weight:800">@arinvestment.in</a></p><a class="btn" href="https://wa.me/918200570102" target="_blank">Chat on WhatsApp</a></div>
+<div class="form"><label>Name</label><input id="name" placeholder="Your name"><label>Mobile Number</label><input id="phone" placeholder="Your mobile number"><label>Message</label><textarea id="message" rows="5" placeholder="How can we help you?"></textarea><button class="btn" onclick="sendWhatsApp()">Send via WhatsApp</button><p class="note">This form opens WhatsApp; it does not store your information on this website.</p></div>
+</div></div></section>
+<footer><div class="footer-brand">AR INVESTMENT</div><p>SIP • MUTUAL FUNDS • IPOs</p><p class="disclaimer">Mutual fund investments are subject to market risks. Read all scheme related documents carefully before investing. Website information is educational and is not a guarantee of returns.</p><p style="font-size:12px;margin-top:15px">© 2026 AR INVESTMENT. All Rights Reserved.</p></footer>
+<a class="whatsapp" href="https://wa.me/918200570102" target="_blank">💬</a>
+<script>
+function money(n){return "₹"+Math.round(n).toLocaleString("en-IN")}
+function calculateSIP(){let p=+monthly.value,r=+rate.value,y=+years.value;if(p<=0||r<0||y<=0){alert("Please enter valid values.");return}let n=y*12,i=r/12/100,fv=i===0?p*n:p*((Math.pow(1+i,n)-1)/i)*(1+i);future.textContent=money(fv);invested.textContent=money(p*n);gain.textContent=money(fv-p*n)}
+function sendWhatsApp(){let t="Hello AR INVESTMENT,%0A%0AName: "+encodeURIComponent(name.value)+"%0AMobile: "+encodeURIComponent(phone.value)+"%0AMessage: "+encodeURIComponent(message.value);window.open("https://wa.me/918200570102?text="+t,"_blank")}
+calculateSIP();
+</script>
+</body>
+</html>
